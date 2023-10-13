@@ -5,7 +5,7 @@ import org.springframework.data.annotation.Id;
 public class Car {
 
 	private String description;
-	private int price;
+	private float price;
 	 @Id
 	 public String id;
 	private String brand;
@@ -33,11 +33,11 @@ public class Car {
 		this.description = description;
 	}
 
-	public int getPrice() {
+	public float getPrice() {
 		return price;
 	}
 
-	public void setPrice(int price) {
+	public void setPrice(float price) {
 		this.price = price;
 	}
 
