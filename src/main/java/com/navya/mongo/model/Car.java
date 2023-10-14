@@ -12,6 +12,14 @@ public class Car {
 	
 	private String itemId;
 
+	public Car(String description, float price, String brand, String itemId) {
+		super();
+		this.description = description;
+		this.price = price;
+		this.brand = brand;
+		this.itemId = itemId;
+	}
+
 	public String getItemId() {
 		return itemId;
 	}

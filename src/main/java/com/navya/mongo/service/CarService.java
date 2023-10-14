@@ -30,7 +30,7 @@ public class CarService {
 
 			if (cars == null) {
 				result.setResponseMessage("No records in the database");
-				response = new ResponseEntity<GeneralResponse>(result, HttpStatus.OK);
+				response = new ResponseEntity<GeneralResponse>(result, HttpStatus.NOT_FOUND);
 				return response;
 			} else {
 				result.setResponseMessage("Request processed successfully");
@@ -57,7 +57,7 @@ public class CarService {
 
 			if (car == null) {
 				result.setResponseMessage("No records in the database");
-				response = new ResponseEntity<GeneralResponse>(result, HttpStatus.OK);
+				response = new ResponseEntity<GeneralResponse>(result, HttpStatus.NOT_FOUND);
 				return response;
 			} else {
 				result.setResponseMessage("Request processed successfully");
